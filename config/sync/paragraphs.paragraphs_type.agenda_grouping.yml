@@ -1,0 +1,7 @@
+uuid: 919bac3e-97b8-455b-8290-0c3bad3ea477
+langcode: en
+status: true
+dependencies: {  }
+id: agenda_grouping
+label: 'Agenda Grouping'
+behavior_plugins: {  }

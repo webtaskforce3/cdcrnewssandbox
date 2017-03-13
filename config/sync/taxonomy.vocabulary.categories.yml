@@ -1,0 +1,9 @@
+uuid: 6beab962-1e28-4710-9223-dc7556fd8c30
+langcode: en
+status: true
+dependencies: {  }
+name: Categories
+vid: categories
+description: 'Article Categories'
+hierarchy: 0
+weight: 0

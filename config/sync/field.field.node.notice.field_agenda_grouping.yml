@@ -1,0 +1,33 @@
+uuid: 63d8aa4c-ca97-473e-9962-19496815ccd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agenda_grouping
+    - node.type.notice
+    - paragraphs.paragraphs_type.agenda_grouping
+  module:
+    - entity_reference_revisions
+id: node.notice.field_agenda_grouping
+field_name: field_agenda_grouping
+entity_type: node
+bundle: notice
+label: 'Agenda Grouping'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      agenda_grouping: agenda_grouping
+    target_bundles_drag_drop:
+      agenda_documents:
+        weight: 3
+        enabled: false
+      agenda_grouping:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

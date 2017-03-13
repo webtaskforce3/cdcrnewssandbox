@@ -1,0 +1,19 @@
+uuid: 1d793f53-1814-4071-8132-c95c12097978
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_group_name
+    - paragraphs.paragraphs_type.agenda_grouping
+id: paragraph.agenda_grouping.field_group_name
+field_name: field_group_name
+entity_type: paragraph
+bundle: agenda_grouping
+label: 'Group name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
