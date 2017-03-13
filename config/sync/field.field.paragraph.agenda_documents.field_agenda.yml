@@ -1,0 +1,27 @@
+uuid: 47bec070-0c57-4886-ae6c-1c0ca8248a61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_agenda
+    - paragraphs.paragraphs_type.agenda_documents
+  module:
+    - file
+id: paragraph.agenda_documents.field_agenda
+field_name: field_agenda
+entity_type: paragraph
+bundle: agenda_documents
+label: Agenda
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'files/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

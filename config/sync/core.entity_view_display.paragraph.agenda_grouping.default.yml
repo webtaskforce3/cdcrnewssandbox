@@ -1,0 +1,31 @@
+uuid: f503f762-47da-49de-9323-27b8651cfa50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.agenda_grouping.field_agenda_documents
+    - field.field.paragraph.agenda_grouping.field_group_name
+    - paragraphs.paragraphs_type.agenda_grouping
+  module:
+    - entity_reference_revisions
+id: paragraph.agenda_grouping.default
+targetEntityType: paragraph
+bundle: agenda_grouping
+mode: default
+content:
+  field_agenda_documents:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_group_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }

@@ -1,0 +1,27 @@
+uuid: 006319f9-a135-4503-bd98-086805ed433a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_consent_calendar
+    - paragraphs.paragraphs_type.agenda_documents
+  module:
+    - file
+id: paragraph.agenda_documents.field_consent_calendar
+field_name: field_consent_calendar
+entity_type: paragraph
+bundle: agenda_documents
+label: 'Consent Calendar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'files/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

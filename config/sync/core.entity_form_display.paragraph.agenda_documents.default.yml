@@ -1,0 +1,32 @@
+uuid: 99f29a6c-d7ff-427d-a100-144c8349676f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.agenda_documents.field_agenda
+    - field.field.paragraph.agenda_documents.field_consent_calendar
+    - paragraphs.paragraphs_type.agenda_documents
+  module:
+    - file
+    - workbench_moderation
+id: paragraph.agenda_documents.default
+targetEntityType: paragraph
+bundle: agenda_documents
+mode: default
+content:
+  field_agenda:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_consent_calendar:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+hidden:
+  created: true
+  status: true
+  uid: true

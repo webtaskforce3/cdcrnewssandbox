@@ -1,0 +1,28 @@
+uuid: 5f9a08e2-1384-4485-8f58-8363ab0dc8a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.agenda_documents.field_agenda
+    - field.field.paragraph.agenda_documents.field_consent_calendar
+    - paragraphs.paragraphs_type.agenda_documents
+  module:
+    - file
+id: paragraph.agenda_documents.default
+targetEntityType: paragraph
+bundle: agenda_documents
+mode: default
+content:
+  field_agenda:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_consent_calendar:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+hidden: {  }

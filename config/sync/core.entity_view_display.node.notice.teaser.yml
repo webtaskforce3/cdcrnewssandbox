@@ -1,0 +1,30 @@
+uuid: 7e25971d-a6df-4c55-b228-615c80be693b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.notice.body
+    - node.type.notice
+  module:
+    - text
+    - user
+id: node.notice.teaser
+targetEntityType: node
+bundle: notice
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_agenda_grouping: true
+  field_category: true
+  field_date_month_year: true
+  field_tags: true

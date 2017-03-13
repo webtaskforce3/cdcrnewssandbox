@@ -1,0 +1,14 @@
+uuid: 9c142ca0-fc6a-4072-bfa0-b4de05ff5896
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.notice_reviewer
+  module:
+    - user
+id: user_remove_role_action.notice_reviewer
+label: 'Remove the Notice reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: notice_reviewer
